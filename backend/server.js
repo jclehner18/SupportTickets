@@ -14,9 +14,9 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.get('/', (req, res) => {
-    res.send('Welcome to Support Desk')
-})
+// app.get('/', (req, res) => {
+//     res.send('Welcome to Support Desk')
+// })
 
 //Routes
 app.use('/api/users', require('./routes/userRoutes'))
